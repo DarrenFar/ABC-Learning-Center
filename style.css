@@ -1,0 +1,645 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background: rgb(122, 115, 115);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: #151516;
+}
+
+nav ul li{
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.video{
+text-align: center;
+padding: 40px;
+justify-content: center;
+align-items: center;
+background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("image/background.jfif");
+background-position: center;
+background-size: cover;;
+}
+
+/*hot class section*/
+.hot h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background: rgb(122, 115, 115);
+    margin-top: 20px;
+}
+
+
+.cover{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    background: rgb(122, 115, 115);
+    
+}
+
+.box{
+    margin: 10px;
+    width: 800px;
+    height: 320px;
+    box-shadow: -1px 0 10px #0000;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.more{
+    text-align: right;
+    padding: 20px;
+    margin-right: 150px;
+    border: 4px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.footer{
+    align-items: center;
+    display: flex;
+    padding-top: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    background: #151516;
+}
+
+.footer .footer-two a{
+    text-decoration: none;
+    color: white;
+
+}
+.footer .footer-one li{
+    display: inline-block;
+    padding: 3px 5px;
+    color: white;
+}
+
+.footer .footer-one li a{
+    color: white;
+}
+
+/*-----------------------------------------------about----------------------------------------------------------------------------*/
+
+.container{
+    padding: 10px 10%;
+}
+
+.row{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+    
+.about-col-1 img{
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 25%;
+    margin-left: 25px;
+}
+
+.sub{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    
+}
+
+.container1{
+    padding: 10px 10%;
+}
+
+.row1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-11{
+    flex-basis: 50%;
+}
+.about-col-11 img{
+    width: 105%;
+    border-radius: 15px;
+}
+
+.about-col-21{
+    flex-basis: 45%;
+}
+
+#about{
+    padding: 40px 0;
+}
+
+/*-----------------------------------Privacy policy-------------------------*/
+.privacy{
+    padding-top: 50px;
+    margin: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.privacy h1{
+    padding-bottom: 10px;
+}
+
+.privacy .bottom-privacy{
+    padding-bottom: 50px;
+}
+
+/*-------------------------------------------------------Contact-----------------------------------------*/
+.contact-section{
+    min-height: 100vh;
+    background-color: rgb(122, 115, 115);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info{
+    color: rgb(0, 0, 0);
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+    margin: 50px;
+}
+.contact-info i{
+    color: black;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.contact-form{
+    max-width: 700px;
+    margin-right: 50px;
+}
+
+.contact-info, .contact-form{
+    flex: 1;
+}
+
+.contact-form h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.contact-form .text-box{
+    background: black;
+    color: #fff;
+    width: calc(50% - 10px);
+    height: 45px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 12px;
+    border: none;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.contact-form .text-box:first-child{
+    margin-right: 15px;
+}
+
+.contact-form textarea{
+    background: black;
+    color: white;
+    border: none;
+    width: 100%;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 12px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.contact-form .send-button{
+    float: right;
+    background: #24a0ed;
+    color: #fff;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    transition-property: background;
+}
+
+.contact-form .send-button:hover{
+    background: #5cb1e6;
+}
+
+/*----------------------------------------------Sitemap-----------------------------------------------*/
+.page-link{
+    padding: 100px;
+    list-style: none;
+    min-height: 100vh;
+}
+
+.page-link li a{
+    text-decoration: none;
+}
+
+/*----------------------------------------------MoreInfo-----------------------------------*/
+.clickme{
+    border-radius: 10px;
+    background-color: aqua;
+    font-size: 20px;
+    padding: 10px;
+    }
+
+button:hover {
+    background-color:blue ;
+}
+
+.hidden{
+    display: none;
+}
+
+.showing{
+    display: block;
+}
+
+/*------------------------------------------------------Courses--------------------------------------------------------------*/
+
+.container-detail{
+    padding: 5%;
+}
+
+.row-detail{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+    
+.details img{
+    border-radius: 15px;
+}
+
+.details-2{
+    flex-basis: 50%;
+    margin-left: 30px;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    padding-bottom: 15px;
+}
+
+/*-----------------------------------schedule------------------------------------------*/
+.schedule-container {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .schedule-container h3.year {
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-top: 50px;
+    color: white;
+  }
+  
+  .schedule-container .schedule {
+   -webkit-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.7); 
+    box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.7);;
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+  }
+  
+  .schedule .schedule-left {
+    background: #151516;
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .schedule .schedule-left .date {
+    font-size: 56px;
+  }
+  
+  .schedule .schedule-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .schedule .schedule-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 24px;
+  }
+  
+  .schedule .schedule-right h3.schedule-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #000000;
+  }
+  
+  .schedule .schedule-right .schedule-timing {
+    background: #151516;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 24px 0;
+    font-size: 14px;
+    color: #fff;
+    width: 300px;
+  }
+
+/*-------------------------------------------------------Jquery ui----------------------------------------------*/
+.container-js{
+    padding-bottom: 130px;
+
+}
+
+#jquery {
+    width: 100px;
+    margin: auto;
+    height: 40px;
+    background: #151516;
+    margin-top: 2.5em;
+
+}
+#jquery ul li {
+    display: inline-block;
+    padding: 0px 10px;
+    width: 105px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+
+}
+
+#jquery ul li ul {
+    display: none;
+    position: absolute;
+    background: rgb(94, 89, 89);
+    margin: 1px 0 0 -9px;
+    
+}
+#jquery ul li ul:before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 5%;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 5px 8px 5px;
+    border-color: transparent transparent #ffffff transparent;
+}
+#jquery ul li ul li {
+    display: block;
+}
+#jquery ul li ul li a {
+    font-weight: normal;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 0px;
+    display: block;
+}
+#jquery ul li ul li a:hover {
+    border-top: none;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 98, 102, 0.6);
+}
+#jquery ul li ul li a:active {
+    position: relative;
+    top: 1px;
+}
+#jquery ul li a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 9px;
+    text-align: center;
+}
+
+/*--------------------------------------schedule button-----------------------------------------------*/
+.container-button{
+    padding-top: 30px;
+    padding-left: 500px;
+}
+
+/*----------------------------------------reviews-------------------------------------------*/
+.review{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+.container-review{
+    width: 600px;
+    background-color: #151516;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 15px;
+}
+
+.container-review ul{
+    margin-left: 40px;
+}
+
+.container-review ul li{
+    background-color: rgb(117, 114, 114);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    transition: .5s;
+}
+
+.container-review ul li:hover{
+    background-color: rgb(107, 82, 82);
+    color: black;
+    font-size: 25px;
+}
+
+.selected{
+    background-color: rgb(107, 82, 82) !important; 
+    color: black !important; 
+}
+
+.review-content{
+    color: #fff;
+    margin:0 20px;
+    padding: 20px;
+    border-radius: 0 10px 10px;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.review-content p:not(:first-of-type){
+    display: none;
+}
+
+.background img{
+    border-radius: 15px;
+}
+
+.padding{
+    padding-bottom: 50px;
+}
+
+/*----------------------------------------------lead generation page--------------------------------------*/
+.registration-container{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration{
+    max-width: 600px;
+}
+
+.registration h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.registration .text-box{
+    background: black;
+    color: #fff;
+    width: calc(50% - 10px);
+    height: 45px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 12px;
+    border: none;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+
+.registration .send-button{
+    float: right;
+    background: #24a0ed;
+    color: #fff;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    transition-property: background;
+}
+
+.registration .send-button:hover{
+    background: #5cb1e6;
+}
+
+/*---------------------------------------Thank you------------------------------------------------*/
+.thanks-container{
+    text-align: center;
+    padding-top: 150px;
+}
+
+.thanks{
+    height: 450px;
+}
+.thanks h2{
+    padding-top: 20px;
+    color: aliceblue;
+}
+.thanks h3{
+    color: aliceblue;
+}
+
+/*-------------------------------------------Admin-------------------------------------------------------*/
+.data-container{
+    margin: 10%;
+    padding: 20px;
+    max-width: fit-content;
+}
+
+.registration-container-admin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+

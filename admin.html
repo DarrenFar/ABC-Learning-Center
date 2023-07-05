@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="admin.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="registration-container-admin">
+        <div class="registration">
+            <form class="register-form" id="registerform" >
+                <input type="text" id="name" name="name" class="text-box" placeholder="Full Name" >
+                <input type="email" id="email" name="email" class="text-box" placeholder="Email id" >
+                <input type="text" id="number" name="number" class="text-box" placeholder="Mobile Number" >
+                <input type="text" id="gender" name="gender" class="text-box" placeholder="Gender" >
+                <input type="number" id="age" name="age" class="text-box" placeholder="Age" >
+                <input type="text" id="interested" name="class" class="text-box" placeholder="Interested class" >
+                <input type="submit"  name="submit" id="btn" class="send-button" value="submit" onclick="store(event);">
+            </form>
+        </div>
+    </div>
+    <fieldset class="data-container">
+        <legend>
+            <h2>Users data</h2>
+        </legend>
+        <button onclick="display()">Get Data</button>
+        <table border="2">
+            <tbody id="tbody"></tbody>
+           </table>
+    </fieldset>
+    <style>
+        table {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        tbody td{
+            padding: 15px;
+        }
+    </style>
+</body>
+
+</html>

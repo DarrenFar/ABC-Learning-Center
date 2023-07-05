@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("ul li").click(function(){
+                $(this).addClass("selected").siblings().removeClass("selected");
+                $(".review-content > p").hide();
+                $($(this).data("value")).fadeIn();
+            })
+        })  
+
+    </script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="image/logo.jpg" height="40px">
+        <nav>
+            <ul class="link">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="form.html">Register Now</a></li>
+                <li><a href="signup.html"><i class="fas fa-user-circle"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/founder.jpg" height="200px" width="200px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub">Founder</h1>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae laborum voluptatum debitis reprehenderit odio doloribus necessitatibus quae pariatur consequuntur hic odit facere laudantium earum quod recusandae, facilis magni expedita saepe?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/vision.png" height="200px" width="200px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub">Vision and mission</h1>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae laborum voluptatum debitis reprehenderit odio doloribus necessitatibus quae pariatur consequuntur hic odit facere laudantium earum quod recusandae, facilis magni expedita saepe?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container1">
+            <div class="row1">
+                <div class="about-col-11">
+                    <img src="image/maps.jpg">
+                </div>
+                <div class="about-col-21">
+                    <h1 class="sub">Location</h1>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae laborum voluptatum debitis reprehenderit odio doloribus necessitatibus quae pariatur consequuntur hic odit facere laudantium earum quod recusandae, facilis magni expedita saepe?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="review">Reviews</h1>
+        <div class="container-review">
+            <ul>
+                <li data-value=".Jemma" class="selected">Jemma</li>
+                <li data-value=".Ritchie">Ritchie</li>
+                <li data-value=".Justin">Justin</li>
+                <li data-value=".Tony">Tony</li>
+                <li data-value=".Brian">Brian</li>
+                <li data-value=".Felix">Felix</li>
+            </ul>
+
+            <div class="review-content">
+                <p class="Jemma">Jemma ipsum dolor sit amet consectetur, adipisicing elit. Dolore vero cum nostrum est accusamus aperiam tenetur eum nesciunt, nam, vel, quasi in amet ex delectus architecto dolorem voluptas maiores enim!</p>
+                <p class="Ritchie">Ritchie ipsum dolor sit amet consectetur adipisicing elit. Cum nemo, est ipsa quia porro neque officia nisi molestias deleniti rem dolor consequuntur voluptate saepe ipsum unde magni. Laborum, necessitatibus exercitationem?</p>
+                <p class="Justin">Justin ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati consequatur ea neque magni veritatis repellat mollitia rem deleniti ducimus sit, omnis sed distinctio, atque deserunt tempora laudantium nam ex nemo!</p>
+                <p class="Tony">Tony ipsum dolor sit amet consectetur adipisicing elit. Laboriosam repellendus hic aspernatur doloribus est perferendis enim, modi nesciunt sequi fuga qui dolore labore ipsum possimus eaque, ducimus nisi officiis explicabo.</p>
+                <p class="Brian">Brian ipsum dolor sit amet consectetur adipisicing elit. Facere voluptatem corrupti minus unde. Velit adipisci fugiat consequatur sit rem sed modi numquam sapiente, dolor quidem tempore, soluta a quo neque!</p>
+                <p class="Felix">Felix ipsum dolor sit amet consectetur, adipisicing elit. Neque distinctio, voluptates quos ipsam nam tenetur eos laboriosam! Vero cum ab, eos tempora quaerat alias. Placeat impedit alias vel a enim.</p>
+            </div>
+
+        </div>
+        <div class="background">
+        <div class="hot">
+        <div class="cover">
+        
+            <div class="box">
+                <img src="image/Jemma.jpg" width="300px" height="300px">
+                <h2>Jemma chan</h2>
+                
+            </div>
+            <div class="box">
+                <img src="image/Ritchie.jpg" width="300px" height="300px">
+                <h2>Ritchie guy</h2>
+            </div>
+            <div class="box">
+                <img src="image/Justin.jpg" width="300px" height="300px">
+                <h2>Justin smith</h2>
+            </div>
+        </div>
+        </div>
+
+        <div class="hot">
+        <div class="cover">
+        
+            <div class="box">
+                <img src="image/Tony.jpg" width="300px" height="300px">
+                <h2>Tony Robbin</h2>
+                
+            </div>
+            <div class="box">
+                <img src="image/Brian.jpg" width="300px" height="300px">
+                <h2>Brian cranston</h2>
+            </div>
+            <div class="box">
+                <img src="image/Felix.jpg" width="300px" height="300px">
+                <h2>Felix Lee</h2>
+            </div>
+        </div>
+        </div>
+    </div>
+        <div class="padding"></div>
+
+    <div class="footer">
+        <div class="footer-two">
+            <img src="image/logo.jpg" width="150px"><br>
+            <a href="privacy.html">Privacy policy</a><br>
+            <a href="sitemap.html">Sitemap</a></a>
+        </div>
+        <div class="footer-one">
+            <h4>Follow us</h4>
+            <li><a href="https://id-id.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i><a><li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com//" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        </div>
+    </div>
+
+
+</body>
+</html>
